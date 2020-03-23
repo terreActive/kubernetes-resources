@@ -7,6 +7,10 @@ Resources to learn Kubernetes
   swi recommended to start your journey!
 - [CKAD exercises](https://github.com/dgkanatsios/CKAD-exercises): exercises for the [CKAD](https://www.cncf.io/certification/ckad/) certification. Also useful as cheat sheet.
 
+### Not yet read / tested
+
+- [Certified Kubernetes Administrator (CKA) Preparation Guide - Curriculum V1.14](https://github.com/leandrocostam/kubernetes-certified-administrator-prep-guide)
+
 ## Environment
 
 ### Easy to install/use distributions
