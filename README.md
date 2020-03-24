@@ -32,7 +32,7 @@ No lab setup at home?
 
 ### Use `kubectl explain`
 
-Kubectl has a built in help for every possible field in your spec similar to `man`.
+Kubectl has a built in help for every possible field in your manifest similar to `man`.
 
 ```sh
 $ kubectl explain cronjob.spec.jobTemplate.spec
