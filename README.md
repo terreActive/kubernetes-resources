@@ -27,3 +27,26 @@ Resources to learn Kubernetes
 No lab setup at home?
 
 -  [GKE](https://cloud.google.com/kubernetes-engine/): You start with $300 worth of credits for free🎉
+
+## Tips and Tricks
+
+### Use `kubectl explain`
+
+Kubectl has a built in help for every possible field in your spec similar to `man`.
+
+```sh
+$ kubectl explain cronjob.spec.jobTemplate.spec
+KIND:     CronJob
+VERSION:  batch/v1beta1
+
+RESOURCE: spec <Object>
+
+DESCRIPTION:
+     Specification of the desired behavior of the job. More info:
+[...]
+
+FIELDS:
+   activeDeadlineSeconds	<integer>
+     Specifies the duration in seconds relative to the startTime that the job
+[...]
+```
