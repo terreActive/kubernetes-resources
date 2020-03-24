@@ -18,7 +18,8 @@ Resources to learn Kubernetes
 
 ### Easy to install/use distributions
 
-- [k3s](https://k3s.io/): single binary kubernetes with containerd and kubectl included. ❤️ swi's favourite ❤️
+- [k3s](https://k3s.io/): single binary kubernetes with containerd and kubectl included. Supports multi-node clusters. \
+❤️ swi's favourite ❤️
 - [microk8s](https://snapcraft.io/microk8s): all-in-one install, requires snapd. Supports multi-node clusters.
 
 ### In the cloud
