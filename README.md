@@ -50,3 +50,8 @@ FIELDS:
      Specifies the duration in seconds relative to the startTime that the job
 [...]
 ```
+## Common Misconceptions
+
+### Persistent Volume (Claim) Access Modes
+
+The access modes (`ReadWriteOnce`, `ReadOnlyMany`, and `ReadWriteMany`) are about the nodes, not the pods. A `ReadWriteOnce` volume can still be read-write mounted by many pods, but only by pods on the same node.
