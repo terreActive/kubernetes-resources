@@ -7,6 +7,7 @@ Resources to learn Kubernetes
   swi recommended to start your journey!
 - [CKAD exercises](https://github.com/dgkanatsios/CKAD-exercises): exercises for the [CKAD](https://www.cncf.io/certification/ckad/) certification. Also useful as cheat sheet.
 - [Official kubernetes documentation](https://kubernetes.io/docs/home/) (start-your-journey-approved by cle)
+- [Kubernetes Security Talk](https://github.com/luxeria/slides/blob/master/2020-04-01/Kubernetes_Security_gandro.pdf)
 
 ### Not yet read / tested
 
