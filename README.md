@@ -51,8 +51,23 @@ FIELDS:
      Specifies the duration in seconds relative to the startTime that the job
 [...]
 ```
+
 ## Common Misconceptions
 
 ### Persistent Volume (Claim) Access Modes
 
 The access modes (`ReadWriteOnce`, `ReadOnlyMany`, and `ReadWriteMany`) are about the nodes, not the pods. A `ReadWriteOnce` volume can still be read-write mounted by many pods, but only by pods on the same node.
+
+## FAQ
+
+### Why Does My Containerized (Perl) App Not Handle Signals Correctly?
+
+OR: If starting my (Perl) app in a container `CTRL-C` does no longer work.
+
+Docker creates a new PID namespace for each container. The first process in the container
+has the process id 1.
+
+> Note: A process running as PID 1 inside a container is treated specially by Linux: it ignores any signal with the default action. So, the process will not terminate on SIGINT or SIGTERM unless it is coded to do so.
+> - [Docker Docs](https://docs.docker.com/engine/reference/run/#foreground)
+
+A good cross-platform solution is running a tiny init system in front of the app. See [Solve Signal Handling in Perl Containers with `tini`](perl-init/).

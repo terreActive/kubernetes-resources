@@ -1,0 +1,7 @@
+FROM perl
+
+RUN apt-get update -q && apt-get install tini
+
+ADD app.pl /
+
+ENTRYPOINT ["tini" , "--", "perl", "app.pl"]
