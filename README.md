@@ -70,4 +70,4 @@ has the process id 1.
 > Note: A process running as PID 1 inside a container is treated specially by Linux: it ignores any signal with the default action. So, the process will not terminate on SIGINT or SIGTERM unless it is coded to do so.
 > - [Docker Docs](https://docs.docker.com/engine/reference/run/#foreground)
 
-A good cross-platform solution is running a tiny init system in front of the app. See [solution](perl-init/).
+A good cross-platform solution is running a tiny init system in front of the app. See [Solve Signal Handling in Perl Containers with `tini`](perl-init/).

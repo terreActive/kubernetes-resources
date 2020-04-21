@@ -1,4 +1,4 @@
-# Solve Signal Handling in Perl Container with `tini`
+# Solve Signal Handling in Perl Containers with `tini`
 
 We should be able to containerize this simple [Perl application](app.pl) with
 a minimal Docker file.
